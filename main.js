@@ -185,6 +185,7 @@ const storyNodes = {
     id: 10,
     name: 'Bad ending',
     text: 'The princess is dead.',
+    image: './img/10.png',
     options: [
       { text: 'Kill yourself' },
       { text: 'Kill yourself' }
@@ -206,6 +207,9 @@ const storyNodes = {
   const storyDiv = document.getElementById('story');
   const choiceDiv = document.getElementById('choices'); // Get the choice div
   let html = `<p>${node.text}</p>`;
+  if (node.image) {
+    html += `<img src="${node.image}" alt="${node.name}" style="width: 600px; height: auto;">`;
+  }
   let choiceHtml = '<ul>'; // Initialize a string with an opening ul tag
   node.options.forEach((option, i) => {
     choiceHtml += `<li><button class="choice-button" onclick="makeChoice(${nodeId}, ${i})">${option.text}</button></li>`;
