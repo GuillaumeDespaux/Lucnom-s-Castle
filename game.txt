@@ -1,46 +1,53 @@
 id:0
-    Text : 
-    Reincarned in another world by the gods of Lucnom, your quest is to find out where the princess of the kingdom disaper. After a long travel around the country, you face a weird dungeon. Just arrived you hear a big explosion coming from the dungeon.
-    You precipite yourself in without any hesitation. You are now in the main room of this weird place.
+    Text: 
+    Reincarnated in another world by the gods of Lucnom, your quest is to find out where the princess of the kingdom disappeared. After a long travel around the country, you face a weird dungeon. Just arrived you hear a big explosion coming from the dungeon.
         Choice 1: Go to the left door -> id:1
         Choice 2: Go to the right door -> id:3
 
 id:1 
-    Text :
+    Text:
     You carefully go towards the left door and open it slowly. The only thing you can see is a very long corridor.
         Choice 1: Go Through -> id:2
         Choice 2: Go back -> id:0
+
 id:2
-    Text : 
-    The more you go toward the more the corridor is darker and darker. You have the feeling that is you continue toward something bad will hapend.
+    Text: 
+    The more you go toward, the darker the corridor becomes. You have the feeling that if you continue, something bad will happen.
         Choice 1: Continue anyways -> id:10 (bad ending)
         Choice 2: Go back -> id:1
+
 id:3
-    Text :
-    You go in direction of the right door without any hesitation, when you push the door that provoc an absolute noise. Just the door pass you heard a loud noise comming from the door you just past by. The door is not more openable anymore. A little futher you can hear noices. Something that sounds like a non human form approching. 
+    Text:
+    You go in the direction of the right door without any hesitation. When you push the door, it provokes an absolute noise. Just as the door passes you, you hear a loud noise coming from the door you just passed by. The door is no longer openable anymore. A little further, you can hear noises, something that sounds like a non-human form approaching.
         Choice 1: Run away -> id:4
         Choice 2: Prepare to fight -> id:5
+
 id:4
-    Text :
-    You run away the more fastest as you can and find a new room this you can observe two doors but one with a lock and one chest.
+    Text:
+    You run away as fast as you can and find a new room. In this room, you can observe two doors, one with a lock and one chest.
         Choice 1: Open the chest -> id:11
-        Choice 2: Open the unlock door -> id:0 (dead)
+        Choice 2: Open the unlocked door -> id:0 (dead)
+
 id:5
-    Text :
-    You grab your sword out of the gard and prepare to attack. The form show up and seems to be a skeleton. You take him out of gard and prepare to attack.
+    Text:
+    You grab your sword out of the guard and prepare to attack. The form shows up and seems to be a skeleton. You take it off guard and prepare to attack.
         Choice 1: Attack right side -> id:6
         Choice 2: Attack left side -> id:0 (dead)
+
 id:6
-    Text :
-    You swing your sword with the most power you can do and destroy the head of the skeleton. Face to you a big door.
+    Text:
+    You swing your sword with the most power you can muster and destroy the head of the skeleton. Facing you is a big door.
         Choice 1: Open the big door -> id:9
+
 id:7
-    Text :
-        Choice 1: You fell into a trap! You're dead.
-        Choice 2: It's the right door! ->id:8
+    Text:
+    Choice 1: You fell into a trap! You're dead.
+    Choice 2: It's the right door! -> id:8
+
 id:8
-    Text :
-    Congratulation, you reach the Carbon princess!
+    Text:
+    Congratulations, you reach the Carbon princess!
+
 id:9
     Text :
     Oh no doors GLFH.
@@ -144,14 +151,16 @@ id:9
         Choice 98 : Open door number 98 -> id:0 (dead)
         Choice 99 : Open door number 99 -> id:0 (dead)
         Choice 100 : Open door number 100 -> id:0 (dead)
-        
+
+
 id:10
-    Text :
-    the princess = dead
+    Text:
+    The princess is dead.
         Choice 1: Cry
         Choice 2: Applause
 
 id:11
-    Text : 
-    When you approch the chest an horrible creature come out of the chest but give you a key to open the lock door.
-        Choice 1: Choice 1: Open the big door -> id:9
+    Text: 
+    When you approach the chest, an horrible creature comes out of the chest but gives you a key to open the locked door.
+        Choice 1: Open the big door -> id:9
+        
