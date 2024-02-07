@@ -44,7 +44,7 @@ function displayNode(nodeId) {
   const storyDiv = document.getElementById('story');
   let html = `<p>${node.text}</p>`;
   node.options.forEach((option, i) => {
-    html += `<button onclick="makeChoice(${nodeId}, ${i})">${option.text}</button>`;
+    html += `<button class="choice-button", onclick="makeChoice(${nodeId}, ${i})">${option.text}</button>`;
   });
   storyDiv.innerHTML = html;
 }
