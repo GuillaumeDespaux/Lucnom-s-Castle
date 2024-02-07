@@ -40,6 +40,7 @@ const storyNodes = {
     id: 4,
     name: 'Running away',
     text: 'You run away as fast as you can and find a new room. In this room, you can observe two doors, one with a lock and one chest.',
+    image: './img/4.png',
     options: [
       { text: 'Open the chest', nextNodeId: 11 },
       { text: 'Open the unlocked door', nextNodeId: 0 }
@@ -72,6 +73,7 @@ const storyNodes = {
     id: 8,
     name: 'Carbon princess',
     text: 'Congratulations, you reach the Carbon princess!',
+    image: './img/8.png',
     options: []
   },
   9: {
@@ -194,6 +196,7 @@ const storyNodes = {
   11: {
     id: 11,
     name: 'Horrible creature',
+    image: '/img/11.png',
     text: 'When you approach the chest, a horrible creature comes out of the chest but gives you a key to open the locked door.',
     options: [
       { text: 'Open the big door', nextNodeId: 9 }
