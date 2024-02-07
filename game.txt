@@ -30,13 +30,13 @@ id:4
 
 id:5
     Text:
-    You grab your sword out of the guard and prepare to attack. The form shows up and seems to be a skeleton. You take it off guard and prepare to attack.
+    You grab your sword out of the guard and prepare to attack. The form shows up and seems to be a Siamese-Monsters. You take it off guard and prepare to attack.
         Choice 1: Attack right side -> id:6
         Choice 2: Attack left side -> id:0 (dead)
 
 id:6
     Text:
-    You swing your sword with the most power you can muster and destroy the head of the skeleton. Facing you is a big door.
+    You swing your sword with the most power you can muster and destroy the head of the Siamese-Monsters. Facing you is a big door.
         Choice 1: Open the big door -> id:9
 
 id:7
@@ -95,7 +95,7 @@ id:9
         Choice 42 : Open door number 42 -> id:0 (dead)
         Choice 43 : Open door number 43 -> id:0 (dead)
         Choice 44 : Open door number 44 -> id:0 (dead)
-        Choice 45 : Open door number 45 -> id:10 (not dead)
+        Choice 45 : Open door number 45 -> id:8 (not dead)
         Choice 46 : Open door number 46 -> id:0 (dead)
         Choice 47 : Open door number 47 -> id:0 (dead)
         Choice 48 : Open door number 48 -> id:0 (dead)
