@@ -1,0 +1,56 @@
+id:0
+    Text : 
+    Reincarned in another world by the gods of Lucnom, your quest is to find out where the princess of the kingdom disaper. After a long travel around the country, you face a weird dungeon. Just arrived you hear a big explosion coming from the dungeon.
+    You precipite yourself in without any hesitation. You are now in the main room of this weird place.
+        Choice 1: Go to the left door -> id:1
+        Choice 2: Go to the right door -> id:3
+
+id:1 
+    Text :
+    You carefully go towards the left door and open it slowly. The only thing you can see is a very long corridor.
+        Choice 1: Go Through -> id:2
+        Choice 2: Go back -> id:0
+id:2
+    Text : 
+    The more you go toward the more the corridor is darker and darker. You have the feeling that is you continue toward something bad will hapend.
+        Choice 1: Continue anyways -> id:10 (bad ending)
+        Choice 2: Go back -> id:1
+id:3
+    Text :
+    You go in direction of the right door without any hesitation, when you push the door that provoc an absolute noise. Just the door pass you heard a loud noise comming from the door you just past by. The door is not more openable anymore. A little futher you can guess a non human form approching. 
+        Choice 1: Run away -> id:4
+        Choice 2: Prepare to fight -> id:5
+id:4
+    Text :
+    You run away the more fastest as you can and find a new room this you can observe two doors and one chest.
+        Choice 1: 
+        Choice 2:
+id:5
+    Text :
+        Choice 1:
+        Choice 2:
+id:6
+    Text :
+        Choice 1:
+        Choice 2:
+id:7
+    Text :
+        Choice 1:
+        Choice 2:
+        Choice 3:
+        Choice 4:
+        Choice 5:
+        Choice 6:
+id:8
+    Text :
+    Congratulation, you reach the Carbon princess!
+id:9
+    Text :
+        Choice 1:
+        Choice 2:
+id:10
+    Text :
+    the princess = ded
+        Choice 1: Cry
+        Choice 2: Applause
+    
