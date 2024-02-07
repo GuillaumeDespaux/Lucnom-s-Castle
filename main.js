@@ -52,6 +52,7 @@ const storyNodes = {
     id: 5,
     name: 'Prepare to fight',
     text: 'You grab your sword out of the guard and prepare to attack. The form shows up and seems to be a skeleton. You take it off guard and prepare to attack.',
+    image: './img/mob5.png',
     options: [
       { text: 'Attack right side', nextNodeId: 6 },
       { text: 'Attack left side', nextNodeId: 12 }
