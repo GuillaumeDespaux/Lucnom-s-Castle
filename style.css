@@ -1,28 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  #story {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-  }
-  #story p {
-    font-size: 18px;
-  }
-  #story button {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
+    background-color: black;
     color: white;
-    background-color: #007BFF;
+    font-family: Arial, Verdana, sans-serif;
   }
-  #story button:hover {
-    background-color: #0056b3;
+
+  #rstbtn{
+    background-color: #463e26;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 60px;
+    border-radius: 12px;
   }
+
+#story{
+    background-color: #463e26;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 12px;
+}
+
+#choices{
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    overflow-x: scroll;
+}
+
+ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  margin: 0 20px;
+  min-width: 150px;
+  padding: 15px;
+  background-color: #463e26;
+  border-radius: 12px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.choice-button {
+  background-color: #463e26;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+}
+
+.choice-button:hover {
+  background-color: white;
+  color: #463e26;
+}
