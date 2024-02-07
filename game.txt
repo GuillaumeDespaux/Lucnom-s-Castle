@@ -1,0 +1,166 @@
+id:0
+    Text: 
+    Reincarnated in another world by the gods of Lucnom, your quest is to find out where the princess of the kingdom disappeared. After a long travel around the country, you face a weird dungeon. Just arrived you hear a big explosion coming from the dungeon.
+        Choice 1: Go to the left door -> id:1
+        Choice 2: Go to the right door -> id:3
+
+id:1 
+    Text:
+    You carefully go towards the left door and open it slowly. The only thing you can see is a very long corridor.
+        Choice 1: Go Through -> id:2
+        Choice 2: Go back -> id:0
+
+id:2
+    Text: 
+    The more you go toward, the darker the corridor becomes. You have the feeling that if you continue, something bad will happen.
+        Choice 1: Continue anyways -> id:10 (bad ending)
+        Choice 2: Go back -> id:1
+
+id:3
+    Text:
+    You go in the direction of the right door without any hesitation. When you push the door, it provokes an absolute noise. Just as the door passes you, you hear a loud noise coming from the door you just passed by. The door is no longer openable anymore. A little further, you can hear noises, something that sounds like a non-human form approaching.
+        Choice 1: Run away -> id:4
+        Choice 2: Prepare to fight -> id:5
+
+id:4
+    Text:
+    You run away as fast as you can and find a new room. In this room, you can observe two doors, one with a lock and one chest.
+        Choice 1: Open the chest -> id:11
+        Choice 2: Open the unlocked door -> id:0 (dead)
+
+id:5
+    Text:
+    You grab your sword out of the guard and prepare to attack. The form shows up and seems to be a skeleton. You take it off guard and prepare to attack.
+        Choice 1: Attack right side -> id:6
+        Choice 2: Attack left side -> id:0 (dead)
+
+id:6
+    Text:
+    You swing your sword with the most power you can muster and destroy the head of the skeleton. Facing you is a big door.
+        Choice 1: Open the big door -> id:9
+
+id:7
+    Text:
+    Choice 1: You fell into a trap! You're dead.
+    Choice 2: It's the right door! -> id:8
+
+id:8
+    Text:
+    Congratulations, you reach the Carbon princess!
+
+id:9
+    Text :
+    Oh no doors GLFH.
+        Choice 1 : Open door number 1 -> id:0 (dead)
+        Choice 2 : Open door number 2 -> id:0 (dead)
+        Choice 3 : Open door number 3 -> id:0 (dead)
+        Choice 4 : Open door number 4 -> id:0 (dead)
+        Choice 5 : Open door number 5 -> id:0 (dead)
+        Choice 6 : Open door number 6 -> id:0 (dead)
+        Choice 7 : Open door number 7 -> id:0 (dead)
+        Choice 8 : Open door number 8 -> id:0 (dead)
+        Choice 9 : Open door number 9 -> id:0 (dead)
+        Choice 10 : Open door number 10 -> id:0 (dead)
+        Choice 11 : Open door number 11 -> id:0 (dead)
+        Choice 12 : Open door number 12 -> id:0 (dead)
+        Choice 13 : Open door number 13 -> id:0 (dead)
+        Choice 14 : Open door number 14 -> id:0 (dead)
+        Choice 15 : Open door number 15 -> id:0 (dead)
+        Choice 16 : Open door number 16 -> id:0 (dead)
+        Choice 17 : Open door number 17 -> id:0 (dead)
+        Choice 18 : Open door number 18 -> id:0 (dead)
+        Choice 19 : Open door number 19 -> id:0 (dead)
+        Choice 20 : Open door number 20 -> id:0 (dead)
+        Choice 21 : Open door number 21 -> id:0 (dead)
+        Choice 22 : Open door number 22 -> id:0 (dead)
+        Choice 23 : Open door number 23 -> id:0 (dead)
+        Choice 24 : Open door number 24 -> id:0 (dead)
+        Choice 25 : Open door number 25 -> id:0 (dead)
+        Choice 26 : Open door number 26 -> id:0 (dead)
+        Choice 27 : Open door number 27 -> id:0 (dead)
+        Choice 28 : Open door number 28 -> id:0 (dead)
+        Choice 29 : Open door number 29 -> id:0 (dead)
+        Choice 30 : Open door number 30 -> id:0 (dead)
+        Choice 31 : Open door number 31 -> id:0 (dead)
+        Choice 32 : Open door number 32 -> id:0 (dead)
+        Choice 33 : Open door number 33 -> id:0 (dead)
+        Choice 34 : Open door number 34 -> id:0 (dead)
+        Choice 35 : Open door number 35 -> id:0 (dead)
+        Choice 36 : Open door number 36 -> id:0 (dead)
+        Choice 37 : Open door number 37 -> id:0 (dead)
+        Choice 38 : Open door number 38 -> id:0 (dead)
+        Choice 39 : Open door number 39 -> id:0 (dead)
+        Choice 40 : Open door number 40 -> id:0 (dead)
+        Choice 41 : Open door number 41 -> id:0 (dead)
+        Choice 42 : Open door number 42 -> id:0 (dead)
+        Choice 43 : Open door number 43 -> id:0 (dead)
+        Choice 44 : Open door number 44 -> id:0 (dead)
+        Choice 45 : Open door number 45 -> id:10 (not dead)
+        Choice 46 : Open door number 46 -> id:0 (dead)
+        Choice 47 : Open door number 47 -> id:0 (dead)
+        Choice 48 : Open door number 48 -> id:0 (dead)
+        Choice 49 : Open door number 49 -> id:0 (dead)
+        Choice 50 : Open door number 50 -> id:0 (dead)
+        Choice 51 : Open door number 51 -> id:0 (dead)
+        Choice 52 : Open door number 52 -> id:0 (dead)
+        Choice 53 : Open door number 53 -> id:0 (dead)
+        Choice 54 : Open door number 54 -> id:0 (dead)
+        Choice 55 : Open door number 55 -> id:0 (dead)
+        Choice 56 : Open door number 56 -> id:0 (dead)
+        Choice 57 : Open door number 57 -> id:0 (dead)
+        Choice 58 : Open door number 58 -> id:0 (dead)
+        Choice 59 : Open door number 59 -> id:0 (dead)
+        Choice 60 : Open door number 60 -> id:0 (dead)
+        Choice 61 : Open door number 61 -> id:0 (dead)
+        Choice 62 : Open door number 62 -> id:0 (dead)
+        Choice 63 : Open door number 63 -> id:0 (dead)
+        Choice 64 : Open door number 64 -> id:0 (dead)
+        Choice 65 : Open door number 65 -> id:0 (dead)
+        Choice 66 : Open door number 66 -> id:0 (dead)
+        Choice 67 : Open door number 67 -> id:0 (dead)
+        Choice 68 : Open door number 68 -> id:0 (dead)
+        Choice 69 : Open door number 69 -> id:0 (dead)
+        Choice 70 : Open door number 70 -> id:0 (dead)
+        Choice 71 : Open door number 71 -> id:0 (dead)
+        Choice 72 : Open door number 72 -> id:0 (dead)
+        Choice 73 : Open door number 73 -> id:0 (dead)
+        Choice 74 : Open door number 74 -> id:0 (dead)
+        Choice 75 : Open door number 75 -> id:0 (dead)
+        Choice 76 : Open door number 76 -> id:0 (dead)
+        Choice 77 : Open door number 77 -> id:0 (dead)
+        Choice 78 : Open door number 78 -> id:0 (dead)
+        Choice 79 : Open door number 79 -> id:0 (dead)
+        Choice 80 : Open door number 80 -> id:0 (dead)
+        Choice 81 : Open door number 81 -> id:0 (dead)
+        Choice 82 : Open door number 82 -> id:0 (dead)
+        Choice 83 : Open door number 83 -> id:0 (dead)
+        Choice 84 : Open door number 84 -> id:0 (dead)
+        Choice 85 : Open door number 85 -> id:0 (dead)
+        Choice 86 : Open door number 86 -> id:0 (dead)
+        Choice 87 : Open door number 87 -> id:0 (dead)
+        Choice 88 : Open door number 88 -> id:0 (dead)
+        Choice 89 : Open door number 89 -> id:0 (dead)
+        Choice 90 : Open door number 90 -> id:0 (dead)
+        Choice 91 : Open door number 91 -> id:0 (dead)
+        Choice 92 : Open door number 92 -> id:0 (dead)
+        Choice 93 : Open door number 93 -> id:0 (dead)
+        Choice 94 : Open door number 94 -> id:0 (dead)
+        Choice 95 : Open door number 95 -> id:0 (dead)
+        Choice 96 : Open door number 96 -> id:0 (dead)
+        Choice 97 : Open door number 97 -> id:0 (dead)
+        Choice 98 : Open door number 98 -> id:0 (dead)
+        Choice 99 : Open door number 99 -> id:0 (dead)
+        Choice 100 : Open door number 100 -> id:0 (dead)
+
+
+id:10
+    Text:
+    The princess is dead.
+        Choice 1: Cry
+        Choice 2: Applause
+
+id:11
+    Text: 
+    When you approach the chest, an horrible creature comes out of the chest but gives you a key to open the locked door.
+        Choice 1: Open the big door -> id:9
+        
