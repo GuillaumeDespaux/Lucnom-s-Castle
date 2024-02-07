@@ -1,9 +1,11 @@
 // Define the nodes of the story
 const storyNodes = {
+  
   0: {
     id: 0,
     name: 'Start',
     text: 'Reincarnated in another world by the gods of Lucnom, your quest is to find out where the princess of the kingdom disappeared. After a long travel around the country, you face a weird dungeon. Just arrived you hear a big explosion coming from the dungeon.',
+    image: './img/0.png',
     options: [
       { text: 'Go to the left door', nextNodeId: 1 },
       { text: 'Go to the right door', nextNodeId: 3 }
