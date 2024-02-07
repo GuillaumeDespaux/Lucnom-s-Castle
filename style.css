@@ -1,28 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  #story {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-  }
-  #story p {
-    font-size: 18px;
-  }
-  #story button {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
+    background-color: black;
     color: white;
-    background-color: #007BFF;
+    font-family: Arial, Verdana, sans-serif;
   }
-  #story button:hover {
-    background-color: #0056b3;
+
+  #rstbtn{
+    background-color: #463e26;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    border-radius: 12px;
   }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
