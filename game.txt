@@ -23,8 +23,8 @@ id:3
 id:4
     Text :
     You run away the more fastest as you can and find a new room this you can observe two doors but one with a lock and one chest.
-        Choice 1: Open the chest
-        Choice 2: Open the unlock door
+        Choice 1: Open the chest -> id:11
+        Choice 2: Open the unlock door -> id:0 (dead)
 id:5
     Text :
     You grab your sword out of the gard and prepare to attack. The form show up and seems to be a skeleton. You take him out of gard and prepare to attack.
@@ -150,3 +150,8 @@ id:10
     the princess = dead
         Choice 1: Cry
         Choice 2: Applause
+
+id:11
+    Text : 
+    When you approch the chest an horrible creature come out of the chest but give you a key to open the lock door.
+        Choice 1: Choice 1: Open the big door -> id:9
