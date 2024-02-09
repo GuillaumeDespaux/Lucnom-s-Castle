@@ -55,7 +55,7 @@ const storyNodes = {
     image: './img/mob5.png',
     options: [
       { text: 'Attack right side', nextNodeId: 6 },
-      { text: 'Attack left side', nextNodeId: 12 }
+      { text: 'Attack left side', nextNodeId: 13 }
     ]
   },
   6: {
@@ -209,6 +209,15 @@ const storyNodes = {
     id: 12,
     name: 'Death',
     image: './img/12.jpg',
+    text: 'You are dead.',
+    options: [
+      { text: 'Try again', nextNodeId: 0 }
+    ]
+  },
+  13: {
+    id: 13,
+    name: 'Combat death',
+    image: './img/13.png',
     text: 'You are dead.',
     options: [
       { text: 'Try again', nextNodeId: 0 }
