@@ -1,19 +1,20 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, Verdana, sans-serif;
-    height: 500px;
-  }
+  background-color: black;
+  color: white;
+  font-family: Arial, Verdana, sans-serif;
+  height: 500px;
+  transition: background-color 0.3s ease;
+}
 
-  #rstbtn{
-    background-color: #463e26;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    width: 60px;
-    border-radius: 12px;
-  }
+#rstbtn{
+  background-color: #463e26;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 60px;
+  border-radius: 12px;
+}
 
 #story{
     background-color: #463e26;
@@ -80,8 +81,68 @@ a:hover {
   background-color: white;
   color: #463e26;
 }
+
 img{
   width: 500px;
   max-height: 400px;
   height: auto;
+}
+.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.dark {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+/* Toggle switch styles */
+.switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "🌞"; /* Sun emoji */
+  font-size: 22px; /* Adjust the size as needed */  
+  left: 2px;
+  bottom: 4px;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4CAF50;
+}
+
+input:checked + .slider:before {
+  content: "🌜"; /* Moon emoji */
+  transform: translateX(26px);
+}
+
+/* Toggle text styles */
+.toggle-text {
+  margin-left: 10px;
+  vertical-align: middle;
 }

@@ -253,5 +253,18 @@ function makeChoice(nodeId, choiceIndex) {
   }
 }
 
+const themeBtn = document.getElementById('themeBtn');
+let currentTheme = localStorage.getItem('theme') || 'light';
+
+document.body.classList.add(currentTheme);
+
+themeBtn.addEventListener('click', () => {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.body.classList.remove('light', 'dark');
+  document.body.classList.add(currentTheme);
+  localStorage.setItem('theme', currentTheme);
+});
+
+
 // Start the story
 displayNode(0);
