@@ -54,7 +54,7 @@ const storyNodes = {
   200:{
     name:"Upstairs",
     text: "You go up the old stairs and face a corridor with 4 door.",
-    image:"200.jpg",
+    image:"./img/200.jpg",
     options:[
       {text:"Open the first door",nextNodeId:210},
       {text:"Open the second door",nextNodeId:220},
