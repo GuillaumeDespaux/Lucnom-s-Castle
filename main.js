@@ -12,6 +12,7 @@ const storyNodes = {
   10:{
     name: "The castle",
     text:'You are in the biggest hall ever seen',
+    image: './img/10.webp',
     options:[
       {text:'Left door', nextNodeId:100},
       {text:'Upstair', nextNodeId:200},
