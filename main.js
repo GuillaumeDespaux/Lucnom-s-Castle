@@ -15,6 +15,7 @@ const storyNodes = {
     id: 1,
     name: 'Left door',
     text: 'You carefully go towards the left door and open it slowly. The only thing you can see is a very long corridor.',
+    image: './img/1.jpeg',
     options: [
       { text: 'Go Through', nextNodeId: 2 },
       { text: 'Go back', nextNodeId: 0 }
@@ -207,7 +208,7 @@ const storyNodes = {
     text: 'When you approach the chest, a horrible creature comes out of the chest but gives you a key to open the locked door.',
     options: [
       { text: 'Open the left door', nextNodeId: 9 },
-      { text: 'Open the right door', nextNodeId: 12 }
+      { text: 'Open the right door', nextNodeId: 16 }
     ]
   },
   12: {
