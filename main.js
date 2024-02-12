@@ -33,6 +33,7 @@ const storyNodes = {
     id: 3,
     name: 'Right door',
     text: 'You go in the direction of the right door without any hesitation. When you push the door, it provokes an absolute noise. Just as the door passes you, you hear a loud noise coming from the door you just passed by. The door is no longer openable anymore. A little further, you can hear noises, something that sounds like a non-human form approaching.',
+    image: './img/3.webp',
     options: [
       { text: 'Run away', nextNodeId: 4 },
       { text: 'Prepare to fight', nextNodeId: 5 }
@@ -44,8 +45,9 @@ const storyNodes = {
     text: 'You run away as fast as you can and find a new room. In this room, you can observe two doors, one with a lock and one chest.',
     image: './img/4.png',
     options: [
+      { text: 'Open the left door', nextNodeId: 14 },
       { text: 'Open the chest', nextNodeId: 11 },
-      { text: 'Open the unlocked door', nextNodeId: 12 }
+      { text: 'Open the right door', nextNodeId: 12 }
     ]
   },
   5: {
@@ -54,14 +56,15 @@ const storyNodes = {
     text: 'You grab your sword out of the guard and prepare to attack. The form shows up and seems to be a skeleton. You take it off guard and prepare to attack.',
     image: './img/mob5.png',
     options: [
-      { text: 'Attack right side', nextNodeId: 6 },
-      { text: 'Attack left side', nextNodeId: 13 }
+      { text: 'Attack left side', nextNodeId: 6 },
+      { text: 'Attack right side', nextNodeId: 13 }
     ]
   },
   6: {
     id: 6,
     name: 'Skeleton defeated',
     text: 'You swing your sword with the most power you can muster and destroy the head of the skeleton. Facing you is a big door.',
+    image: './img/6.jpeg',
     options: [
       { text: 'Open the big door', nextNodeId: 9 }
     ]
@@ -83,6 +86,7 @@ const storyNodes = {
     id: 9,
     name: 'GLFH',
     text: 'Oh no, doors GLFH.',
+    image: './img/100.png',
     options: [
       { text: 'Open door number 1', nextNodeId: 12 },
       { text: 'Open door number 2', nextNodeId: 12 },
@@ -202,7 +206,8 @@ const storyNodes = {
     image: './img/11.png',
     text: 'When you approach the chest, a horrible creature comes out of the chest but gives you a key to open the locked door.',
     options: [
-      { text: 'Open the big door', nextNodeId: 9 }
+      { text: 'Open the left door', nextNodeId: 9 },
+      { text: 'Open the right door', nextNodeId: 12 }
     ]
   },
   12: {
@@ -222,7 +227,28 @@ const storyNodes = {
     options: [
       { text: 'Try again', nextNodeId: 0 }
     ]
-  }
+  },
+  14: {
+    id: 14,
+    name: 'Locked door',
+    image: './img/14.jpeg',
+    text: 'This door is locked',
+    options: [
+      { text: 'Try to open the door again', nextNodeId: 14 },
+      { text: 'Try something else', nextNodeId: 15 }
+    ]
+  },
+  15: {
+    id: 15,
+    name: '4 bis',
+    text: 'What do you want to try now?',
+    image: './img/4.png',
+    options: [
+      { text: 'Open the left door', nextNodeId: 14 },
+      { text: 'Open the chest', nextNodeId: 11 },
+      { text: 'Open the right door', nextNodeId: 12 }
+    ]
+  },
 };
 
 // Function to display a part of the story
