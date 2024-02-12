@@ -47,7 +47,7 @@ const storyNodes = {
     options: [
       { text: 'Open the left door', nextNodeId: 14 },
       { text: 'Open the chest', nextNodeId: 11 },
-      { text: 'Open the right door', nextNodeId: 12 }
+      { text: 'Open the right door', nextNodeId: 16 }
     ]
   },
   5: {
@@ -246,7 +246,16 @@ const storyNodes = {
     options: [
       { text: 'Open the left door', nextNodeId: 14 },
       { text: 'Open the chest', nextNodeId: 11 },
-      { text: 'Open the right door', nextNodeId: 12 }
+      { text: 'Open the right door', nextNodeId: 16 }
+    ]
+  },
+  16: {
+    id: 16,
+    name: 'Explosion',
+    image: './img/16.webp',
+    text: 'You fell into a trap, and died in an explosion.',
+    options: [
+      { text: 'Try again', nextNodeId: 0 }
     ]
   },
 };
