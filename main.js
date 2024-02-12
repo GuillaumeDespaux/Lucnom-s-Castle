@@ -236,7 +236,7 @@ const storyNodes = {
   }
   let choiceHtml = '<ul>'; // Initialize a string with an opening ul tag
   node.options.forEach((option, i) => {
-    choiceHtml += `<li><button class="choice-button" onclick="makeChoice(${nodeId}, ${i})">${option.text}</button></li>`;
+    choiceHtml += `<li><button class="choice-button, nice-btn" onclick="makeChoice(${nodeId}, ${i})">${option.text}</button></li>`;
   });
   choiceHtml += '</ul>'; // Add a closing ul tag
   storyDiv.innerHTML = html;
