@@ -190,6 +190,7 @@ const storyNodes = {
   300: {
     name: 'Right door',
     text: 'You go in the direction of the right door without any hesitation. When you push the door, it provokes an absolute noise. Just as the door passes you, you hear a loud noise coming from the door you just passed by. The door is no longer openable anymore. A little further, you can hear noises, something that sounds like a non-human form approaching.',
+    image: './img/3.webp',
     options: [
       { text: 'Run away', nextNodeId: 400 },
       { text: 'Prepare to fight', nextNodeId: 500 }
@@ -216,6 +217,7 @@ const storyNodes = {
   600: {
     name: 'Skeleton defeated',
     text: 'You swing your sword with the most power you can muster and destroy the head of the skeleton. Facing you is a big door.',
+    image: './img/6.jpeg',
     options: [
       { text: 'Open the big door', nextNodeId: 900 }
     ]
@@ -400,7 +402,7 @@ function displayNode(nodeId){
   }
   let choiceHtml = '<ul>'; // Initialize a string with an opening ul tag
   node.options.forEach((option, i) => {
-    choiceHtml += `<li><button class="choice-button" onclick="makeChoice(${nodeId}, ${i})">${option.text}</button></li>`;
+    choiceHtml += `<li><button class="choice-button, nice-btn" onclick="makeChoice(${nodeId}, ${i})">${option.text}</button></li>`;
   });
   choiceHtml += '</ul>'; // Add a closing ul tag
   storyDiv.innerHTML = html;
@@ -419,6 +421,8 @@ function makeChoice(nodeId, choiceIndex) {
 }
 
 const themeBtn = document.getElementById('themeBtn');
+const resetBtn = document.getElementById('rstbtn');
+
 let currentTheme = localStorage.getItem('theme') || 'light';
 
 document.body.classList.add(currentTheme);
@@ -428,6 +432,12 @@ themeBtn.addEventListener('click', () => {
   document.body.classList.remove('light', 'dark');
   document.body.classList.add(currentTheme);
   localStorage.setItem('theme', currentTheme);
+});
+
+resetBtn.addEventListener('click', () => {
+  document.body.classList.remove('light', 'dark');
+  document.body.classList.add('light');
+  localStorage.setItem('theme', 'light');
 });
 
 
