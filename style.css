@@ -1,5 +1,4 @@
 body {
-  background-color: black;
   color: white;
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1.5rem;
@@ -9,13 +8,17 @@ body {
 }
 
 #story{
-    background-color: #463e26;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 12px;
-    text-align: center;
+  background-color: #463e26;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  text-align: center;
+}
+.story-container {
+  color: white;
+  border: 1px solid white;
+  padding-top: 4px;
+  padding-right: 4px;
 }
 
 #rstbtn{

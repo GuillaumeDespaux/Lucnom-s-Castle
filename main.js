@@ -254,6 +254,8 @@ function makeChoice(nodeId, choiceIndex) {
 }
 
 const themeBtn = document.getElementById('themeBtn');
+const resetBtn = document.getElementById('rstbtn');
+
 let currentTheme = localStorage.getItem('theme') || 'light';
 
 document.body.classList.add(currentTheme);
@@ -263,6 +265,12 @@ themeBtn.addEventListener('click', () => {
   document.body.classList.remove('light', 'dark');
   document.body.classList.add(currentTheme);
   localStorage.setItem('theme', currentTheme);
+});
+
+resetBtn.addEventListener('click', () => {
+  document.body.classList.remove('light', 'dark');
+  document.body.classList.add('light');
+  localStorage.setItem('theme', 'light');
 });
 
 
