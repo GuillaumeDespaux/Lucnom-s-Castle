@@ -12,6 +12,7 @@ const storyNodes = {
   10:{
     name: "The castle",
     text:'You are in the biggest hall ever seen',
+    image: './img/10.webp',
     options:[
       {text:'Left door', nextNodeId:100},
       {text:'Upstair', nextNodeId:200},
@@ -260,7 +261,7 @@ const storyNodes = {
       { text: 'Open door number 17', nextNodeId: 1200 },
       { text: 'Open door number 18', nextNodeId: 1200 },
       { text: 'Open door number 19', nextNodeId: 1200 },
-      { text: 'Open door number 20', nextNodeId: 1200 },
+      { text: 'Open door number 20', nextNodeId: 800 },
       { text: 'Open door number 21', nextNodeId: 1200 },
       { text: 'Open door number 22', nextNodeId: 1200 },
       { text: 'Open door number 23', nextNodeId: 1200 },
@@ -285,7 +286,7 @@ const storyNodes = {
       { text: 'Open door number 42', nextNodeId: 1200 },
       { text: 'Open door number 43', nextNodeId: 1200 },
       { text: 'Open door number 44', nextNodeId: 1200 },
-      { text: 'Open door number 45', nextNodeId: 800 },
+      { text: 'Open door number 45', nextNodeId: 1200 },
       { text: 'Open door number 46', nextNodeId: 1200 },
       { text: 'Open door number 47', nextNodeId: 1200 },
       { text: 'Open door number 48', nextNodeId: 1200 },
