@@ -1,178 +1,177 @@
 // Define the nodes of the story
 const storyNodes = {
 
-  0:{
+  0: {
     name: 'Start',
-    text: 'Reincarnated in another world by the gods of Lucnom, your quest is to find out where the princess of the kingdom disappeared. After a long travel around the country, you face a weird dungeon. Just arrived you hear a big explosion coming from the dungeon.',
+    text: 'Reincarnated in another world by the gods of Lucnom, your quest is to find out where the princess of the kingdom disappeared. After a long travel around the country, you face a weird dungeon. Just arrived, you hear a big explosion coming from the dungeon.',
     image: './img/0.png',
     options: [
-      { text: 'Continue', nextNodeId: 10 },
+      { text: 'Continue', nextNodeId: 10 }
     ]
   },
-  10:{
+  10: {
     name: "The castle",
-    text:'You are in the biggest hall ever seen',
+    text: 'You are in the biggest hall ever seen.',
     image: './img/10.webp',
-    options:[
-      {text:'Left door', nextNodeId:100},
-      {text:'Upstair', nextNodeId:200},
-      {text:'Right door', nextNodeId:300},
-      {text:'Inspect',nextNodeId:10.1}
+    options: [
+      { text: 'Left door', nextNodeId: 100 },
+      { text: 'Upstairs', nextNodeId: 200 },
+      { text: 'Right door', nextNodeId: 300 },
+      { text: 'Inspect', nextNodeId: 10.1 }
     ]
   },
-  10.1:{
+  10.1: {
     name: "Inspect the castle",
-    text: "Inspect the castle",
-    options:[
-      {text:'Look behind the blinds',nextNodeId:11},
-      {text:'Look the chandeler',nextNodeId:12},
-      {text:'Explore', nextNodeId:10}
+    text: "Inspect the castle.",
+    options: [
+      { text: 'Look behind the blinds', nextNodeId: 11 },
+      { text: 'Look at the chandelier', nextNodeId: 12 },
+      { text: 'Explore', nextNodeId: 10 }
     ]
   },
-  11:{
+  11: {
     name: "Behind the blinds",
-    text: 'You look behind the blinds and find a map of the castle',
-    options:[
-      {text:'Back to inspect', nextNodeId:10.1}
+    text: 'You look behind the blinds and find a map of the castle.',
+    options: [
+      { text: 'Back to inspect', nextNodeId: 10.1 }
     ]
   },
-  12:{
-    name: "The chadeller",
-    text: 'This chandeler seems pretty old',
-    options:[
-      {text:'Back to inspect', nextNodeId:10.1}
+  12: {
+    name: "The chandelier",
+    text: 'This chandelier seems pretty old.',
+    options: [
+      { text: 'Back to inspect', nextNodeId: 10.1 }
     ]
   },
   // left door story
-  100:{
+  100: {
     name: "Hall left door",
-    text: "The door is locked I should use something to unlock it.",
-    options:[
-      {text:'Go back to the hall', nextNodeId:10}
+    text: "The door is locked. I should use something to unlock it.",
+    options: [
+      { text: 'Go back to the hall', nextNodeId: 10 }
     ]
   },
-  // upstair story
-  200:{
-    name:"Upstairs",
-    text: "You go up the old stairs and face a corridor with 4 door.",
-    image:"./img/200.jpg",
-    options:[
-      {text:"Open the first door",nextNodeId:210},
-      {text:"Open the second door",nextNodeId:220},
-      {text:"Open the thrid door",nextNodeId:230},
-      {text:"Open the fourth door",nextNodeId:240},
-      {text: 'Go back in the hall',nextNodeId:10}
+  // upstairs story
+  200: {
+    name: "Upstairs",
+    text: "You go up the old stairs and face a corridor with 4 doors.",
+    image: "./img/200.jpg",
+    options: [
+      { text: "Open the first door", nextNodeId: 210 },
+      { text: "Open the second door", nextNodeId: 220 },
+      { text: "Open the third door", nextNodeId: 230 },
+      { text: "Open the fourth door", nextNodeId: 240 },
+      { text: 'Go back to the hall', nextNodeId: 10 }
     ]
   },
-  210:{
-    name: "Upstair first door",
-    image:"./img/6.jpeg",
-    text: "This is a basic room with with an old bed and a nice view outside",
-    options:[
-      {text: 'Go back on upstairs', nextNodeId:200},
-      {text: 'Inspect the room', nextNodeId:210.1}
+  210: {
+    name: "Upstairs first door",
+    image: "./img/6.jpeg",
+    text: "This is a basic room with an old bed and a nice view outside.",
+    options: [
+      { text: 'Go back upstairs', nextNodeId: 200 },
+      { text: 'Inspect the room', nextNodeId: 210.1 }
     ]
   },
-  210.1:{
-    name:'Inspect first room',
-    image:"./img/210.1.jpg",
-    text:'Inspect first room',
-    options:[
-      {text:'Look under the bed', nextNodeId:211},
-      {text:'Check the window', nextNodeId:212},
-      {text:'Inspect the room', nextNodeId:210}
+  210.1: {
+    name: 'Inspect first room',
+    image: "./img/210.1.jpg",
+    text: 'Inspect first room.',
+    options: [
+      { text: 'Look under the bed', nextNodeId: 211 },
+      { text: 'Check the window', nextNodeId: 212 },
+      { text: 'Inspect the room', nextNodeId: 210 }
     ]
   },
-  211:{
-    name:'Look under the bed',
-    text:'There is nothing expect a mouse',
-    options:[
-      {text:'Inspect the room', nextNodeId:210.1}
+  211: {
+    name: 'Look under the bed',
+    text: 'There is nothing except a mouse.',
+    options: [
+      { text: 'Inspect the room', nextNodeId: 210.1 }
     ]
   },
-  212:{
-    name:'Look the view',
-    text:'There is a beautifull view from there we can see all the plains.',
-    options:[
-      {text:'Inspect the room', nextNodeId:210.1}
+  212: {
+    name: 'Look at the view',
+    text: 'There is a beautiful view from there; we can see all the plains.',
+    options: [
+      { text: 'Inspect the room', nextNodeId: 210.1 }
     ]
   },
-  220:{
-    name: "Upstair second door",
-    text: 'This room is weirdly designed, it looks like furniture have been moved.',
-    options:[
-      {text: 'Inspect this room',nextNodeId:220.1},    
-      {text: 'Go back on upstairs', nextNodeId:200},
+  220: {
+    name: "Upstairs second door",
+    text: 'This room is weirdly designed; it looks like furniture has been moved.',
+    options: [
+      { text: 'Inspect this room', nextNodeId: 220.1 },
+      { text: 'Go back upstairs', nextNodeId: 200 }
     ]
   },
-  220.1:{
-    name:'Room inspection',
-    text:'Room inspection',
-    options:[
-      {text:'Look under the bed', nextNodeId:221},
-      {text:'Look the celling', nextNodeId:222},
-      {text:'Look the wardrobe', nextNodeId:223},
-      {text:'Explore', nextNodeId:220},
+  220.1: {
+    name: 'Room inspection',
+    text: 'Room inspection.',
+    options: [
+      { text: 'Look under the bed', nextNodeId: 221 },
+      { text: 'Look at the ceiling', nextNodeId: 222 },
+      { text: 'Look at the wardrobe', nextNodeId: 223 },
+      { text: 'Explore', nextNodeId: 220 }
     ]
   },
-  221:{
-    name:'Look under the bed2',
-    text:'._.?',
-    options:[
-      {text:'Inspect the room', nextNodeId:220.1}
+  221: {
+    name: 'Look under the bed',
+    text: '._.?',
+    options: [
+      { text: 'Inspect the room', nextNodeId: 220.1 }
     ]
   },
-  222:{
-    name:'Celling',
-    text:'You poke the celling with your sword but nothing happened.',
-    options:[
-      {text:'Inspect the room', nextNodeId:220.1}
+  222: {
+    name: 'Ceiling',
+    text: 'You poke the ceiling with your sword, but nothing happened.',
+    options: [
+      { text: 'Inspect the room', nextNodeId: 220.1 }
     ]
   },
-  223:{
-    name:'the wardorbe',
-    text:'Behind some old dresses you can ears a little air flow.',
-    options:[
-      {text:'Entrer in the wardrobe', nextNodeId:231},
-      // {text:'Think about life', nextNodeId:223.1},
-      {text:'Inspect the room', nextNodeId:220.1}
+  223: {
+    name: 'The wardrobe',
+    text: 'Behind some old dresses, you can hear a little airflow.',
+    options: [
+      { text: 'Enter the wardrobe', nextNodeId: 231 },
+      { text: 'Inspect the room', nextNodeId: 220.1 }
     ]
   },
-  230:{
-    name: "Upstair thrid door",
-    text: 'The door is weirdly locked',
-    options:[
-      {text: 'Go back on upstairs', nextNodeId:200}
+  230: {
+    name: "Upstairs third door",
+    text: 'The door is weirdly locked.',
+    options: [
+      { text: 'Go back upstairs', nextNodeId: 200 }
     ]
   },
-  230.1:{
-    name:"the locked door upstair", 
-    text:"What a strange room why there is some secret passage?",
-    options:[
-      {text: 'Inspect the strange room',nextNodeId:231},
-      {text: 'Take back the passage', nextNodeId:220}
-    ] 
-  },
-  231:{
-    name:'Inspection',
-    text:'After barely manage to go through the little gap in the wardrobe you face a new room.',
-    options:[
-      {text:'Inspect the ground', nextNodeId:232},
-      {text:'Inspect the table', nextNodeId:233},
-      {text:'Inspect the door', nextNodeId:234},
-      {text:'Explore', nextNodeId:230.1},
+  230.1: {
+    name: "The locked door upstairs",
+    text: "What a strange room; why is there a secret passage?",
+    options: [
+      { text: 'Inspect the strange room', nextNodeId: 231 },
+      { text: 'Take back the passage', nextNodeId: 220 }
     ]
   },
-  232:{
-    name:'inspect the ground',
-    text:'There is some text but I can not read them.',
-    options:[
-      {text: 'Inspect the strange room',nextNodeId:231},
+  231: {
+    name: 'Inspection',
+    text: 'After barely managing to go through the little gap in the wardrobe, you face a new room.',
+    options: [
+      { text: 'Inspect the ground', nextNodeId: 232 },
+      { text: 'Inspect the table', nextNodeId: 233 },
+      { text: 'Inspect the door', nextNodeId: 234 },
+      { text: 'Explore', nextNodeId: 230.1 }
     ]
   },
-  233:{
-    name:'inspect the table',
-    text:'The is multiple note on the table but theyre is only one redable. "If "FOX" = 45, "ELK" = 28, and "ANT" = 35, what does "CAT" equal?"',
+  232: {
+    name: 'Inspect the ground',
+    text: 'There is some text, but I cannot read them.',
+    options: [
+      { text: 'Inspect the strange room', nextNodeId: 231 }
+    ]
+  },
+  233: {
+    name: 'Inspect the table',
+    text: 'The is multiple notes on the table but there is only one readable. "If "FOX" = 45, "ELK" = 28, and "ANT" = 35, what does "CAT" equal?"',
     options:[
       {text: 'Inspect the strange room',nextNodeId:231},
     ]
