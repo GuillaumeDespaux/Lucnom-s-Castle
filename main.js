@@ -66,7 +66,6 @@ const storyNodes = {
   },
   210: {
     name: "Upstairs first door",
-    image: "./img/6.jpeg",
     text: "This is a basic room with an old bed and a nice view outside.",
     options: [
       { text: 'Go back upstairs', nextNodeId: 200 },
@@ -140,6 +139,7 @@ const storyNodes = {
   230: {
     name: "Upstairs third door",
     text: 'The door is weirdly locked.',
+    image: "./img/6.jpeg",
     options: [
       { text: 'Go back upstairs', nextNodeId: 200 }
     ]
