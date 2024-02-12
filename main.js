@@ -59,7 +59,7 @@ const storyNodes = {
       {text:"Open the second door",nextNodeId:220},
       {text:"Open the thrid door",nextNodeId:230},
       {text:"Open the fourth door",nextNodeId:240},
-      {text: 'Go back in the hall',nextNodeId:100}
+      {text: 'Go back in the hall',nextNodeId:10}
     ]
   },
   210:{
@@ -76,6 +76,7 @@ const storyNodes = {
     options:[
       {text:'Look under the bed', nextNodeId:211},
       {text:'Check the window', nextNodeId:212},
+      {text:'Inspect the room', nextNodeId:210}
     ]
   },
   211:{
@@ -102,7 +103,7 @@ const storyNodes = {
   },
   220.1:{
     name:'Room inspection',
-    name:'Room inspection',
+    text:'Room inspection',
     options:[
       {text:'Look under the bed', nextNodeId:221},
       {text:'Look the celling', nextNodeId:222},
@@ -150,7 +151,7 @@ const storyNodes = {
   },
   231:{
     name:'Inspection',
-    text:'Inspection of the strange room',
+    text:'After barely manage to go through the little gap in the wardrobe you face a new room.',
     options:[
       {text:'Inspect the ground', nextNodeId:232},
       {text:'Inspect the table', nextNodeId:233},
