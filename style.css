@@ -3,23 +3,71 @@ body {
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1.5rem;
   font-weight: 700;
-  height: 500px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
   transition: background-color 0.3s ease;
 }
 
+
 #story{
-  background-color: #463e26;
-  color: white;
+  color: rgb(34, 30, 30);
   padding: 14px 20px;
-  border: none;
   text-align: center;
 }
+
 .story-container {
-  color: white;
-  border: 1px solid white;
-  padding-top: 4px;
-  padding-right: 4px;
+  background: #fafafa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3), 0 0 300px 25px rgba(222,198,122,0.7) inset;
+  width: 90%;
+  height: fit-content;
+  left: -45%;
+  margin: 1.5% 50% auto;
+  margin-top: 75px;
+  margin-bottom: 100px;
+  padding: 24px;
+  position: relative;
 }
+
+.story-container:before, .story-container:after {
+  content: "";
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2), inset 0 0 300px rgba(222,198,122,0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  transition: .5s;
+}
+
+.story-container:before {
+  left: -5px;
+  top: 2px;  
+  transform: rotate(-1.5deg);
+}
+
+.story-container:after {
+  right: -3px;
+  top: 0px;
+  transform: rotate(2.4deg);
+}
+
+.story-container:hover:before {
+transform: rotate(0deg);
+border: solid rgba(111,99,61,0.4);
+border-width: 0px 0px 0px 1px;
+left: -6px;
+top: -6px; 
+}
+
+.story-container:hover:after {
+transform: rotate(0deg);
+border: solid rgba(111,99,61,0.4);
+border-width: 0px 0px 0px 1px;
+right: 3px;
+top: -3px;
+}
+
 
 #rstbtn{
     color: white;
@@ -97,7 +145,7 @@ a:hover {
 .nice-btn:after {
   content: '';
   position: absolute;
-  border: 1px solid white;
+  border: 2px solid white;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 1px);
@@ -121,14 +169,13 @@ img{
   max-height: 400px;
   height: auto;
 }
+
 .light {
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #b1afaf;
 }
 
 .dark {
   background-color: #333;
-  color: #f9f9f9;
 }
 
 /* Toggle switch styles */
@@ -180,3 +227,4 @@ input:checked + .slider:before {
   margin-left: 10px;
   vertical-align: middle;
 }
+
