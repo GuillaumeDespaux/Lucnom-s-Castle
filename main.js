@@ -84,8 +84,8 @@ const storyNodes = {
   },
   9: {
     id: 9,
-    name: 'GLFH',
-    text: 'Oh no, doors GLFH.',
+    name: 'GLHF',
+    text: 'Oh no, doors GLHF.',
     image: './img/100.png',
     options: [
       { text: 'Open door number 1', nextNodeId: 12 },
