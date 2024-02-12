@@ -54,7 +54,7 @@ const storyNodes = {
   200:{
     name:"Upstairs",
     text: "You go up the old stairs and face a corridor with 4 door.",
-    image:"200.jpg",
+    image:"./img/200.jpg",
     options:[
       {text:"Open the first door",nextNodeId:210},
       {text:"Open the second door",nextNodeId:220},
@@ -65,6 +65,7 @@ const storyNodes = {
   },
   210:{
     name: "Upstair first door",
+    image:"./img/6.jpeg",
     text: "This is a basic room with with an old bed and a nice view outside",
     options:[
       {text: 'Go back on upstairs', nextNodeId:200},
@@ -73,6 +74,7 @@ const storyNodes = {
   },
   210.1:{
     name:'Inspect first room',
+    image:"./img/210.1.jpg",
     text:'Inspect first room',
     options:[
       {text:'Look under the bed', nextNodeId:211},
