@@ -1,29 +1,33 @@
 body {
-  background-color: black;
   color: white;
-  font-family: Arial, Verdana, sans-serif;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.5rem;
+  font-weight: 700;
   height: 500px;
   transition: background-color 0.3s ease;
 }
 
-#rstbtn{
+#story{
   background-color: #463e26;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
   border: none;
-  width: 60px;
-  border-radius: 12px;
+  text-align: center;
+}
+.story-container {
+  color: white;
+  border: 1px solid white;
+  padding-top: 4px;
+  padding-right: 4px;
 }
 
-#story{
-    background-color: #463e26;
+#rstbtn{
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 30px 0px;
     border: none;
-    border-radius: 12px;
     text-align: center;
+    width: 120px;
 }
 
 #choices{
@@ -47,13 +51,11 @@ li {
   margin: 0 20px;
   min-width: 150px;
   padding: 15px;
-  background-color: #463e26;
-  border-radius: 12px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+   color: white;
+   text-decoration: none;
 }
 
 a:hover {
@@ -62,24 +64,56 @@ a:hover {
     cursor:pointer;  
 }
 
-.choice-button {
+.nice-btn {
   background-color: #463e26;
+  border: 0 solid white;
+  box-sizing: border-box;
   color: white;
-  padding: 10px 20px;
-  margin: 10px 0;
-  border: none;
-  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  border-radius: 12px;
+  text-decoration: none white solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.choice-button:hover {
-  background-color: white;
-  color: #463e26;
+.nice-btn:focus {
+  outline: 0;
+}
+
+.nice-btn:after {
+  content: '';
+  position: absolute;
+  border: 1px solid white;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.nice-btn:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .nice-btn {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
 }
 
 img{
