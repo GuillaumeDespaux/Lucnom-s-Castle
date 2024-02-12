@@ -170,7 +170,7 @@ const storyNodes = {
   },
   233:{
     name:'inspect the table',
-    text:'The is multiple note on the table but theyre is only one redable. "If "FOX" = 45, "ELK" = 37, and "ANT" = 27, what does "CAT" equal?"',
+    text:'The is multiple note on the table but theyre is only one redable. "If "FOX" = 45, "ELK" = 28, and "ANT" = 35, what does "CAT" equal?"',
     options:[
       {text: 'Inspect the strange room',nextNodeId:231},
     ]
@@ -259,11 +259,11 @@ const storyNodes = {
       { text: 'Open door number 17', nextNodeId: 1200 },
       { text: 'Open door number 18', nextNodeId: 1200 },
       { text: 'Open door number 19', nextNodeId: 1200 },
-      { text: 'Open door number 20', nextNodeId: 800 },
+      { text: 'Open door number 20', nextNodeId: 1200 },
       { text: 'Open door number 21', nextNodeId: 1200 },
       { text: 'Open door number 22', nextNodeId: 1200 },
       { text: 'Open door number 23', nextNodeId: 1200 },
-      { text: 'Open door number 24', nextNodeId: 1200 },
+      { text: 'Open door number 24', nextNodeId: 800 },
       { text: 'Open door number 25', nextNodeId: 1200 },
       { text: 'Open door number 26', nextNodeId: 1200 },
       { text: 'Open door number 27', nextNodeId: 1200 },
